@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attributes and Pseudo Selectors</title>
+    <style>
+      .container {
+        display: block;
+        width: 400px;
+        margin: auto;
+      }
+      div form input {
+        display: block;
+      }
+
+      /* selecting those input which are text only */
+      input[type="text"] {
+        font-size: 2rem;
+      }
+      /* selecting a tag which have target attribute */
+      a[target] {
+        color: hotpink;
+      }
+      /* selecting a tag which have target attribute set to _self*/
+      a[target="_self"] {
+        color: lawngreen;
+      }
+
+      /* nth child */
+      /* selecting li items which are multiples of 3 */
+      li:nth-child(3n + 3) {
+        background-color: lightseagreen;
+      }
+
+      /* selecting odd child of li */
+      li:nth-child(odd) {
+        color: rgb(243, 219, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="http://google.com" target="_blank">Go to Google</a>
+      <a href="http://facebook.com" target="_self">Go to facebook</a>
+      <form class="form-control">
+        <input type="text" placeholder="Enter your name:" />
+        <input type="password" placeholder="Enter your password:" />
+        <input type="submit" value="Submit" />
+      </form>
+      <ul>
+        <li class="items" id="items1">Item 1</li>
+        <li class="items" id="items2">Item 2</li>
+        <li class="items" id="items3">Item 3</li>
+        <li class="items" id="items4">Item 4</li>
+        <li class="items" id="items5">Item 5</li>
+        <li class="items" id="items6">Item 6</li>
+        <li class="items" id="items7">Item 7</li>
+        <li class="items" id="items8">Item 8</li>
+        <li class="items" id="items9">Item 9</li>
+        <li class="items" id="items10">Item 10</li>
+      </ul>
+    </div>
+  </body>
+</html>

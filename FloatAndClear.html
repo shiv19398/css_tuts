@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Clear</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        background-color: rgb(238, 217, 217);
+        border: 3px solid rgb(241, 121, 241);
+        margin: auto;
+        width: 900px;
+      }
+      .items {
+        margin: 15px 20px;
+        background-color: rgb(250, 243, 243);
+        border: 2px solid rgb(228, 78, 78);
+        width: 800px;
+      }
+      #computer {
+        float: left;
+        width: 44%;
+        padding: 10px 15px;
+      }
+      #fruits {
+        float: left;
+        width: 44%;
+        padding: 10px 15px;
+      }
+      #stationary {
+        /* float: left; */
+        clear: both;
+        width: 92.75%;
+        padding: 10px 15px;
+      }
+      p,
+      h3 {
+        text-align: justify;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my Store</h1>
+      <div id="fruits" class="items">
+        <h3>Fruits</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui
+          odio hic est facilis, quos maxime reprehenderit porro deserunt
+          assumenda, enim adipisci voluptates. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quam ipsam ipsum facilis similique quasi
+          fugit vel doloremque, consequatur amet alias, quaerat hic. Omnis
+          dolores error pariatur necessitatibus, laboriosam culpa eum aliquam
+          architecto debitis dolore.
+        </p>
+      </div>
+      <div id="computer" class="items">
+        <h3>Computer</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+          laudantium ullam quaerat adipisci at culpa dolor odio ducimus
+          exercitationem placeat, suscipit aperiam cupiditate! Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Suscipit voluptate voluptatum,
+          officiis deleniti eum illo consequatur amet perspiciatis ab minus
+          aspernatur blanditiis? Laudantium est error cum dolore. Repellendus
+          repellat sed corporis qui natus modi.
+        </p>
+      </div>
+      <div id="stationary" class="items">
+        <h3>Stationary</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, culpa
+          eaque. Iste laudantium unde totam deserunt optio earum ratione nobis
+          doloribus, sint animi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

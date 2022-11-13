@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables and Properties</title>
+    <style>
+        /* to declare variables as global , define them in root */
+        :root{
+             --box-color:rgb(230, 210, 210);
+            --text-color:black;
+            --max-w:220px;
+        }
+        .container{
+            display: flex;
+            /* var stands for variable */
+            background-color: var(--box-color);
+            max-width: var(--max-w);
+            /* flex-wrap: wrap; */
+            margin: auto;
+        }
+        .box{
+           
+            height: 200px;
+            width: 200px;
+            background-color: var(--box-color);
+            color: var(--text-color);
+            margin: 3px 5px;
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

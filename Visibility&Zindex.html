@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility and Z-index fund</title>
+    <style>
+      .box {
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+      }
+      #box1 {
+        background-color: green;
+        position: relative;
+        top: 45px;
+        /* by making z-indez=40 greater than that of box2, box 1 will cover the box 2 if they overlap */
+        /* but it works only if position is not static */
+        z-index: 40;
+      }
+      #box2 {
+        /* //visiblity states that whether you want to show the particular thing or not */
+        /* by making visibility hidden, element will become hidden but take its space. */
+        /* visibility: hidden; */
+
+        /* but by making display: none, it will neither take space nor will show. */
+        /* display: none; */
+        background-color: red;
+
+        /* z-index will work only for positioned element,i.e, for relative, absolute, fixed, sticky  */
+
+        /* it specifies which element will cover the other if they overlap. */
+        /* greater the z-index, greater the chance of being covering other element */
+        position: relative;
+        top: 5px;
+        z-index: 20;
+      }
+      #box3 {
+        background-color: blue;
+      }
+      #box4 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </body>
+</html>

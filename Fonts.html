@@ -1,0 +1,30 @@
+<!-- There are two types of fonts:- 
+Web safe fonts :- which come pre-installed with your os.
+Web fonts :- which needs to be import in our file-->
+
+<!-- Font stack:- specifies a prioritzed list of font family names or generic family names. ie, specifying a list of font families in font family so that whatever is available, browser can use.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Fonts</title>
+    <style>
+      p {
+        /* font stack */
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 23px; /* 1/96th of the inch */
+        line-height: 2em; /* upar ki line ka difference*/
+      }
+      span {
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>CSS Fonts</h4>
+    <p>Lets play with <span>fonts.</span> It is very exciting</p>
+  </body>
+</html>

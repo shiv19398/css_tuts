@@ -1,0 +1,46 @@
+<!-- Responsive design is a way for a web developer to make his website adapt to all
+the devices and resolutions. Responsive design is a necessity and not a luxury
+anymore Various ways to achieve responsive design 1.Setting up the viewport
+2.Use mac-width/max-height 3.Using CSS Media Queries 4.Using rem/vh/vw units
+over pixels -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Desgin</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+      .container {
+        border: 2px solid red;
+        text-align: center;
+        font-size: 20px;
+        /* vh, vw are viewport height and width respectively
+        if we want a container to have a height of the full browser screen, then we used to check with the height in pixels but this is a unconvenient method, we can use vh, vw for this which can automatically take the height and width according to our browser screens
+        height: 100vh; 100vh means 100% height of the view port
+        width: 100vw; similarly for the width */
+      }
+
+      /*#heading1 {
+          em unit:- jo bhi immediate parent or container ka fontsize hai uske respect me apna font size set krta hai
+        font-size: 5em; in this case, 5em means 5 times of the font-size of the container whic 5*20=100px
+      padding: 5em; padding is 5 times of the font-size of the particular element which is 5*100px = 500px 
+      }*/
+      /* #heading2 {
+          rem is a way to set font-size of a element according to font-size set in the html i.e the browser
+        font-size: 5rem; in this case, html font-size is 10px , so font-size of heading2 is 5*10=50px 
+        padding: 5rem; here, padding is also calculated with the respect to font size of the browser, i.e. 5*10=50px
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading1">This is first heading</h1>
+      <h1 id="heading2">This is second heading</h1>
+      <h1 id="heading3">This is third heading</h1>
+    </div>
+  </body>
+</html>

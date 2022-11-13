@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations & Keyframes</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: cornsilk;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        background-color: blueviolet;
+        animation-name: shiv1;
+        /* animation-name: shiv2; */
+        animation-duration: 8s;
+        animation-iteration-count: 2;
+        /* start aaram se hoga phir slowly badhega */
+        /* animation-timing-function: ease-in; */
+        /* ease-in-out start bhi aaram se hga or last tak same speed rahegi */
+        /* animation-timing-function: ease-in-out; */
+        /* speed thodi jyada hoti hai as compared to ease in */
+        animation-timing-function: ease;
+        /* animation-direction: reverse; */
+
+        /* to fill the animation in the whole width */
+        /* animation-fill-mode: forwards; */
+      }
+      @keyframes shiv2 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 200px;
+          left: 0px;
+        }
+        75% {
+          top: 200px;
+          left: 200px;
+        }
+        100% {
+          top: 0px;
+          left: 200px;
+        }
+      }
+      @keyframes shiv1 {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">This is a box</div>
+    </div>
+  </body>
+</html>

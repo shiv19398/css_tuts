@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      .container {
+        background-color: rgba(113, 177, 238, 0.521);
+        border: 3px solid green;
+        /* We can set padding/ margin for top, right, bottom and left */
+        /* padding: 10px;
+        margin: 10px; */
+        /* padding-top: 10px;
+        padding-right: 8px;
+        padding-bottom: 16px;
+        padding-left: 12px; */
+        /* 
+        We can give different padding in all the directions and the pattern is top right bottom left
+        padding : 10px 8px 16px 12px;   */
+        /* if we want to give same padding to top/bottom and left/right */
+        padding: 34px 70px;
+        margin: 34px 14px;
+
+        width: 300px;
+        /* Now if we increase the padding in left and right direction, then our width of the container will because width consists of margin and border, so this is why, our width also changes. */
+        /* If you want to fix the width of the border, then  */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="firstPara">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+        quidem, ipsum dolorum ad veritatis placeat numquam, quam officiis beatae
+        cum alias atque necessitatibus!
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="secondPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, delectus,
+        ullam corporis quaerat quidem harum adipisci recusandae libero quis sit
+        officiis, ex sequi!
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="thirdPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, atque
+        exercitationem beatae, voluptate deleniti velit nemo totam repellat,
+        voluptatem repellendus explicabo quisquam facere.
+      </p>
+    </div>
+  </body>
+</html>

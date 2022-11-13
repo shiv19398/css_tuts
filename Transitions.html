@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions in CSS</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .box {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* transition-property: background-color; */
+        /* transition-duration: 2s; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-delay: 0.5s; */
+
+        /* short hand for one-liner transition properties */
+        /* transition: background-color 2s ease-in-out 0.5s; */
+
+        /* suppose you want to  change all the properties of the box so you can do like this:- */
+        transition: all 1s ease-in-out 0.5s;
+
+        /* note:- we should do transition only one those properties which have continuous values like colors, height, width and font-sizes , those properties which have binary values should not be used in transitions */
+      }
+      .box:hover {
+        background-color: cornsilk;
+        width: 400px;
+        height: 400px;
+        border-radius: 112px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+  </body>
+</html>

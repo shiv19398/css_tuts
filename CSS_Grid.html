@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        display: grid;
+        /* iska mtlb ye hai ki phle vale column ko 300px dedo, dusre vale ko 100 or 3re vale ko bhi 100px width de do */
+        /* grid-template-columns: 300px 100px 100px; */
+
+        /* isme automatic width set ho jati hai sbko auto dene pe */
+        /* grid-template-columns: 300px auto 100px; */
+
+        /* fr unit hai screen ki width ko divide krne ki */
+        grid-template-columns: 1fr 4fr 1fr;
+
+        /* agr humare pas jyada columns hai to sbke liye grid template columns dene k liye hum */
+        /* first argument in the repeat function is the no of columns */
+        /* and second one is the width that you want to set */
+        grid-template-columns: repeat(10, auto);
+
+        /* columns ki tarah rows ko bhi height de skte hai */
+        /* this means items in second row will have twice the height of the first row items */
+        /* grid-template-rows: 1fr 2fr; */
+
+        /* This can be used which can apply height to all those rows whose height is not given in the above format */
+        /* grid-auto-rows: 4fr; */
+
+        grid-gap: 1rem;
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      .item {
+        /* height: 100px;
+        width: 100px; */
+        background-color: burlywood;
+        padding: 3px;
+      }
+      .item:first-child {
+        /* Spanning rows and columns in grid */
+        /* 1 is column start, then /span means adding and last arg is no. of rows and columns */
+        /* grid-column: 1 / span 3;
+        grid-row: 1 / span 3; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">This is item1</div>
+      <div class="item">This is item2</div>
+      <div class="item">This is item3</div>
+      <div class="item">This is item4</div>
+      <div class="item">This is item5</div>
+      <div class="item">This is item6</div>
+      <div class="item">This is item7</div>
+      <div class="item">This is item8</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item4</div>
+      <div class="item">This is item5</div>
+      <div class="item">This is item6</div>
+      <div class="item">This is item7</div>
+      <div class="item">This is item8</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item9</div>
+      <div class="item">This is item9</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!-- box-sizing - border box karne se jo humne width di hai vo hi rehti hai including margin and padding means content ka size change krne pe width change ni hota till one point. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Inline and Block</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      header{
+        border: 1px solid black;
+        margin: auto;
+        width: 1200px;
+      }
+      img {
+        width: 34px;
+        margin: auto;
+        display: block;
+      }
+      h3 {
+        text-align: center;
+        margin: 0px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .container{
+        margin: auto;
+        width: 1200px;
+
+      }
+      .box{
+        border: 2px solid black;
+        background-color: grey;
+        margin: 4px 0px;
+        padding: 23px;
+        display:inline-block;
+        width: 33%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://www.codewithharry.com/assets/img/logo.png"
+        alt="Image"
+      />
+      <h3>Welcome to my Blog</h3>
+    </header>
+    <div class="container">
+      <div class="box">
+        <h4>Heading</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          dicta doloremque nam dolorum! Ipsam reiciendis fugit voluptatum
+          exercitationem fuga architecto dolore totam expedita alias.
+          Reprehenderit esse neque itaque molestias officiis? Quibusdam
+          molestiae accusantium aspernatur.
+        </p>
+        </div>
+
+           <div class="box">
+        <h4>Heading</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          dicta doloremque nam dolorum! Ipsam reiciendis fugit voluptatum
+          exercitationem fuga architecto dolore totam expedita alias.
+          Reprehenderit esse neque itaque molestias officiis? Quibusdam
+          molestiae accusantium aspernatur.
+        </p>
+        </div>
+
+           <div class="box">
+        <h4>Heading</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          dicta doloremque nam dolorum! Ipsam reiciendis fugit voluptatum
+          exercitationem fuga architecto dolore totam expedita alias.
+          Reprehenderit esse neque itaque molestias officiis? Quibusdam
+          molestiae accusantium aspernatur.
+        </p>
+      </div>
+  </body>
+</html>

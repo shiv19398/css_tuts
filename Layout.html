@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid red;
+        flex-direction: column;
+        width: 60vw;
+        margin: 70px auto;
+      }
+      .heading {
+        text-align: center;
+        border: 2px solid yellow;
+        display: block;
+        width: 10vw;
+        margin: 100px auto;
+      }
+      .items {
+        text-align: center;
+        border: 2px solid black;
+      }
+      #decrement {
+        position: absolute;
+        top: 325px;
+        left: 160px;
+      }
+      .btn {
+        border: none;
+      }
+      #increment {
+        position: absolute;
+        top: 325px;
+        right: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h2><span class="symbol">/</span> Reviews</h2>
+    </div>
+    <button class="btn" id="decrement">Decrement</button>
+    <div class="container">
+      <div class="items" id="image"><img src="" /></div>
+      <div class="items" id="name">Shiv</div>
+      <div class="items" id="title">Software Engineer</div>
+      <div class="items" id="quote">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, atque
+        in. Quis, delectus laboriosam? Alias illum harum assumenda libero
+        recusandae culpa nobis fuga ex?
+      </div>
+      <div class="items symbol">Symbol Icon</div>
+    </div>
+    <button class="btn" id="increment">Increment</button>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+What is a CSS Preprocessor?
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor' own unique syntax.Most CSS Preprocessor will add some features that dont exist in pure CSS such as mixin, nesting selector, inheritence selector and so on. These features make the CSS structure more readable and easier to maintain.
+
+Why should we use a CSS preprocessor?
+Speed:- With CSS preprocessor, we have to write less code as compared to basic CSS syntax.
+Organization:- We can write different css files and merge them into one and can send to the client.
+Modification:-small changes to the cascade changes the entirely style sheet
+Minification:- it minifies the css which speeds up the page load time.
+Errors:- It do not let you write rules that cannot be written in standard css.
+
+Popular CSS Preprocessor Languages:-
+SASS
+LESS
+stylus
+
+Versions of SASS:
+version-1 :- .sass file that is hard to learn
+version 3:- .scss file that is easy to learn.
+
